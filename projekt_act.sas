@@ -1,6 +1,6 @@
 libname aids "C:\Users\bubus\Documents\studia\analiza czasu trwania\projekt";
 
-proc import datafile="C:\Users\bubus\Documents\studia\analiza czasu trwania\projekt\AIDS_ClinicalTrial_GroupStudy175.csv"
+proc import datafile="C:\Users\bubus\Documents\studia\analiza czasu trwania\projekt\code\AIDS_ClinicalTrial_GroupStudy175.csv";
     out=aids.data
     dbms=csv
     replace;
@@ -13,5 +13,5 @@ run;
 
 proc means data=aids.data n nmiss min max mean;
 run;
-/**/
+
 
