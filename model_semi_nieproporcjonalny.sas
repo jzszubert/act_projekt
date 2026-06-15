@@ -75,5 +75,5 @@ proc phreg data=work.data_nph plots=survival;
     model time*label(0) = age gender race wtkg hemo cd40_1 cd40_2 / ties=efron;
     baseline covariates=work.data_nph out=work.Pred_sur_np
              survival=_all_ / diradj;
-    title 'Bezposrednio skorygowana funkcja przezycia - model NPH';
+    title 'Bezposrednio skorygowana funkcja przezycia';
 run;
